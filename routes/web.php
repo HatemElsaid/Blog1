@@ -18,22 +18,22 @@ Route::get('/', function () {
 // });
 
 Auth::routes();
-Route::get('/arrangLiked', 'ArrangLikedController@mostLiked');
-Route::get('/arrang', 'HomeController@mostViews');
+Route::get('/arrangLiked', 'ArrangLikedController@mostLiked')->middleware('auth');
+Route::get('/arrang', 'HomeController@mostViews')->middleware('auth');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/post' , "PostController@post")->middleware('auth');
-Route::get('/profile' , "ProfileController@profile");
-Route::get('/category' , "CategoryController@category");
-Route::post('/addCategory' , "CategoryController@addCategory");
-Route::post('/addProfile' , "ProfileController@addProfile");
-Route::post('/addPost' , "PostController@addPost");
+Route::get('/profile' , "ProfileController@profile")->middleware('auth');
+Route::get('/category' , "CategoryController@category")->middleware('auth');
+Route::post('/addCategory' , "CategoryController@addCategory")->middleware('auth');
+Route::post('/addProfile' , "ProfileController@addProfile")->middleware('auth');
+Route::post('/addPost' , "PostController@addPost")->middleware('auth');
 Route::get('/view/{id}' , "PostController@view")->middleware('auth');
-Route::get('/edit/{id}' , "PostController@edit");
-Route::post('/editPost/{id}' , "PostController@editPost");
-Route::get('/deletePost/{id}' , "PostController@deletePost");
-Route::get('/category/{id}' , "PostController@category");
-Route::get('/like/{id}' , "PostController@like");
-Route::get('/dislike/{id}' , "PostController@disLike");
+Route::get('/edit/{id}' , "PostController@edit")->middleware('auth');
+Route::post('/editPost/{id}' , "PostController@editPost")->middleware('auth');
+Route::get('/deletePost/{id}' , "PostController@deletePost")->middleware('auth');
+Route::get('/category/{id}' , "PostController@category")->middleware('auth');
+Route::get('/like/{id}' , "PostController@like")->middleware('auth');
+Route::get('/dislike/{id}' , "PostController@disLike")->middleware('auth');
 // Route::post('/like' , "PostController@postLikePost");
 // Route::post('/like' , 'LikeController@index')->middleware('auth');
  
