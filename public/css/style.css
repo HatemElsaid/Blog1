@@ -1,0 +1,95 @@
+body{
+    font-family: 'Cairo', sans-serif;
+}
+.separator{
+    border: 1px solid;
+}
+/*side bar*/
+.side-bar{
+    background-color: white;
+    border: 1px solid #a3b9e0;
+    border-radius: 3px;
+    padding: 20px
+}
+.side-bar .profile{
+    
+    margin-bottom: 20px
+}
+
+.side-bar .categories{
+    margin-top: 30px;
+}
+.side-bar h2{
+    display: block;
+    background-color: #ccc;
+    padding: 6px;
+    border-radius: 5px;
+}
+.recommends p{
+  
+    border: .5px solid #a3b9e0;
+    display: block;
+    
+    border-radius: 8px;
+    padding: 3px;
+   
+}
+/*End side bar*/
+
+/*start profile.blade*/
+.user-info{
+    border: 1px solid #a3b9e0;
+    padding: 20px;
+    border-radius: 19px;
+    margin-bottom: 30px;
+}
+.avatar{
+    max-width:85px ;
+    border-radius: 50%;
+}
+
+/*End profile.blade*/
+
+
+/*psots*/
+.post-content{
+    border: 1px solid #a3b9e0;
+    padding: 20px;
+    border-radius: 19px;
+    margin-bottom: 30px;
+}
+.post-content h4{
+    margin: 25px;
+    background-color: #e0d9d9;
+    padding: 12px;
+    display: block;
+    border-radius: 13px;
+    color: black
+}
+.post-content p{
+    margin: 20px;
+    font-size: 17px;
+     
+    padding: 13px;
+    display: block;
+    border-radius: 17px;
+    word-spacing: 2px;
+}
+/*End posts*/
+
+/*home page*/
+
+.home-page h2{
+    display: block;
+    background-color: #ccc;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.pagination-block{
+    text-align: center;
+    margin: 30px;
+    background-color: #e0d9d9;
+    border-radius: 5px;
+}
+/*End home page*/
